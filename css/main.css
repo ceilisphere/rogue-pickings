@@ -7,11 +7,16 @@ body {
 	font-size: 16px;
 }
 
+h1, h3, h4 {
+	color: black;
+	text-transform: uppercase;
+}
+
 /** Grid Styles **/
 
 .row {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -39,6 +44,43 @@ body {
 }
 
 /*** Header Styles ***/
+
+header {
+	margin: 0 auto;
+	width: 96%;
+	text-align: center;
+}
+
+h1 {
+	border-bottom: 3px solid #77a466;
+	font-size: 1.875em;
+	font-weight: bolder;
+	margin: 30px 2% 0;
+	padding-bottom: 15px;
+}
+
+header span {
+	color: #77a466;
+}
+
+nav ul {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+nav ul li {
+	padding: 10px 0;
+}
+
+nav a {
+	color: #77a466;
+	font-size: .875em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
 
 /*** Top Section Styles ***/
 
