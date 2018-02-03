@@ -1,23 +1,12 @@
 /*** Base Styles ***/
 
-body {
-	margin: 0 auto;
-	max-width: 1200px;
-	font-family: Montserrat, Helvetica, Arial, sans-serif;
+html {
+	box-sizing: border-box;
 	font-size: 16px;
 }
 
-h1, h3, h4 {
-	color: black;
-	text-transform: uppercase;
-}
-
-h3 {
-	font-size: 1.125em;
-}
-
-h4 {
-	font-size: .75em;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /** Grid Styles **/
@@ -49,6 +38,29 @@ h4 {
 
 [class*="col-"] {
     float: left;
+}
+
+/*********************************/
+
+body {
+	margin: 0 auto;
+	max-width: 1200px;
+	min-width: 165px;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+h1, h3, h4 {
+	color: black;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.125em;
+}
+
+h4 {
+	font-size: .75em;
 }
 
 /*** Header Styles ***/
@@ -125,7 +137,6 @@ figure img {
 #menu, #reviews, #contact {
 	border-top: 1px solid #eee;
 	height: auto;
-	width: 100%;
 }
 
 #menu ul {
@@ -158,4 +169,70 @@ footer span {
 
 /********** Tablet Styles ************/
 
+
+
+
 /********** Desktop Styles **********/
+
+@media only screen and (min-width: 940px) {
+
+
+/*** Grid Styles ***/
+
+.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+/*** Header Styles ***/
+
+header {
+	height: 110px;
+	margin: 0 2%;
+	width: 96%;
+}
+
+header h1 {
+	border-bottom: none;
+	margin: 45px 0;
+	padding: 0;
+	text-align: left;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 45px 5px;
+	margin: 0 auto;
+}
+
+/*** Top Section Styles ***/
+
+/*** Bottom Section Styles ***/
+
+#menu, #reviews {
+	border-right: 1px solid #eee;
+}
+
+#reviews, #contact {
+	padding: 0 2%;
+}
+
+/*** Footer Styles ***/
+
+	} /******** Desktop Styles *****/
